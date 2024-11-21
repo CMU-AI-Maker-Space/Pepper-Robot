@@ -8,9 +8,10 @@ import sys
 import numpy as np
 import pickle
 import argparse
-import vision_definitions
 import traceback
 from PIL import Image
+
+from read_faces import get_frame_pepper
 
 # Define Pepper IP address
 IP = "128.237.236.27"
@@ -41,27 +42,6 @@ photoService = main_session.service("ALPhotoCapture")
 
 # Define contextual configuration
 configuration = {"bodyLanguageMode": "contextual"}
-
-def get_frame_pepper(nameID, videoService, width = 320, height = 240):
-	# return a frame from Pepper
-	try:
-		# grab next frame
-		result = videoService.getImageRemote(nameID)
-		image = None
-		if result == None:
-			print 'cannot capture'
-		elif result[6] == None:
-			print 'no image data string.'
-		else:
-			image_string = str(result[6])
-			im = Image.frombytes("RGB", (width, height), image_string)
-			im.show()
-			image = np.asarray(im)
-	except Exception as e:
-		print(str(e))
-		traceback.print_exc()
-	return image
-
 
 def update_faces(frame, known_face_names, match_threshold, known_face_encodings, greeted, width = 320, height = 240):
 	# for each input frame, recognise all the faces and for each face, update the list of known faces and encodings
@@ -103,7 +83,7 @@ def update_faces(frame, known_face_names, match_threshold, known_face_encodings,
 		
 	else:
 		# no faces found
-		print "No faces found"
+		print('No faces found')
 	
 	return known_face_encodings, known_face_names
 
