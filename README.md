@@ -80,4 +80,8 @@ Other custom interactions can be defined as methods like say_welcome() in intera
 
 This code was adapted from the NAOqi Documentation
 
-In progress...
+This code can run web applications stored on Pepper at the location: ~/.local/share/PackageManager/apps/
+
+To create a web application, create a folder in the apps directory and add the necessary files (index.html, main.js, main.css, etc.)
+
+To run the web application, use line 17 in tablet.py to set the app name and run the code. The showWebview method will display the index.html on the tablet.
