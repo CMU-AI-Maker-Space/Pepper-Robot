@@ -14,18 +14,13 @@ def main(session):
     try:
         tabletService = session.service("ALTabletService")
         tabletService.cleanWebview()
-        tabletService.loadApplication("shape-game")
-        #tabletService.loadApplication("robot-page")
-        # tabletService.showWebview("http://198.18.0.1/apps/shape-game/index.html")
-        #tabletService.showWebview("http://www.google.com")
+        #tabletService.loadApplication("robot-page") # Load an application on the tablet
+        #tabletService.showWebview("http://www.google.com") # Display a web page on the tablet
         tabletService.showWebview()
 
-        # Ensure that the tablet wifi is enable
+        # Ensure that the tablet wifi is enabled
         # tabletService.enableWifi()
 
-        # Display a web page on the tablet
-        # tabletService.showWebview("http://www.google.com")
-        #tabletService.showWebview("http://198.18.0.1/apps/boot-config/preloading_dialog.html")
         
         time.sleep(3)
 
