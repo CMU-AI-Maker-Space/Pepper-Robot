@@ -58,24 +58,26 @@ pip install -r requirements.txt
 python <file_name>.py
 ```
 
-## Face Recognition
+## Face Recognition (face_recognition.py)
 
 This code was adapted from [here](https://blogemtech.medium.com/pepper-facial-recognition-43e24b10cea2)
 
 This is still a work in progress. The code is not fully functional yet.
 
-## Read Images from Camera
+## Read Images from Camera (read_frame.py)
 
 This code was adaper from the NAOqi Documentation
 
 This code can be used to extract images from the head camera on the robot
 
-## Interaction
+## Interaction (interact.py)
 
 This code was adapted from the NAOqi Documentation
 
 Other custom interactions can be defined as methods like say_welcome() in interact.py
 
-## Tablet Control
+## Tablet Control (tablet.py)
 
-In progress
+This code was adapted from the NAOqi Documentation
+
+In progress...
