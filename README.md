@@ -74,7 +74,11 @@ This code can be used to extract images from the head camera on the robot
 
 This code was adapted from the NAOqi Documentation
 
-Other custom interactions can be defined as methods like say_welcome() in interact.py
+### Hot Keys:
+1. W: Say "Welcome ..."
+2. B: Say "Bye ..."
+
+Other custom interactions can be defined as methods like say_welcome() in interact.py and a hot key can be assigned to it in the main method.
 
 ## Tablet Control (tablet.py)
 
@@ -85,11 +89,6 @@ This code can run web applications stored on Pepper at the location: ~/.local/sh
 To create a web application, create a folder in the apps directory and add the necessary files (index.html, main.js, main.css, etc.)
 
 To run the web application, use line 17 in tablet.py to set the app name and run the code. The showWebview method will display the index.html on the tablet.
-
-### Hot Keys:
-1. W: Say "Welcome ..."
-2. B: Say "Bye ..."
-
 
 ## Greet (greet.py)
 
