@@ -85,3 +85,15 @@ This code can run web applications stored on Pepper at the location: ~/.local/sh
 To create a web application, create a folder in the apps directory and add the necessary files (index.html, main.js, main.css, etc.)
 
 To run the web application, use line 17 in tablet.py to set the app name and run the code. The showWebview method will display the index.html on the tablet.
+
+### Hot Keys:
+1. W: Say "Welcome ..."
+2. B: Say "Bye ..."
+
+
+## Greet (greet.py)
+
+With this code Pepper tracks humans and performs a greeting action with its right hand.
+
+## Wave (wave.py)
+
