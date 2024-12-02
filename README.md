@@ -66,7 +66,7 @@ This is still a work in progress. The code is not fully functional yet.
 
 ## Read Images from Camera (read_frame.py)
 
-This code was adaper from the NAOqi Documentation
+This code was adapted from the NAOqi Documentation
 
 This code can be used to extract images from the head camera on the robot
 
