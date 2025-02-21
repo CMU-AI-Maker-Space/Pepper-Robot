@@ -3,7 +3,7 @@ from naoqi import ALProxy, ALBroker, ALModule
 import time
 import sys
 
-robotIP = "127.0.0.1"
+robotIP = "128.237.236.27"
 port = 9559
 
 global humanEventWatcher
